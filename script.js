@@ -1,9 +1,12 @@
-let formRows;
-let formCollums;
+//Variáveis e funções
 
-const formMain = document.querySelector(".main-form")
+const formMain = document.querySelector(".form-main")
 const formCheckbox = document.querySelector("#highlight-diagonals")
 
+const formColorMain = document.querySelector("#form-color-main")
+const formColorSecond = document.querySelector("#form-color-second")
+
+const matrixTable = document.querySelector(".matrix-table")
 
 //Preenche com TR e TDS e gerando valores referente as linhas e colunas dela
 function generateMatrix(table, collums, rows) {
