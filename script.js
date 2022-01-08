@@ -82,10 +82,11 @@ formMain.addEventListener('submit', (e) => {
     formBtn.disabled = true;
 })
 
-//Verifica se a checkbox está marcada, se estiver abrirá um novo campo para preencher as cores das diagonais.
+//Verifica se a checkbox está marcada, se estiver abrirá um novo campo para preencher as cores das diagonais. Após marcar também é adicionada as tags a coluna
 formCheckbox.addEventListener('click', (e) => {
     const checkBox = e.target
     document.querySelector(".form-color-selector").classList.toggle('hide')
+    addTagDiagonalsMatrix(matrixTable)
 })
 
 
