@@ -90,3 +90,7 @@ formCheckbox.addEventListener('click', (e) => {
 })
 
 
+
+//Após ser criado as tags da matrix, essa função irá verificar o input type color, e alterará o css para ficar de acordo com as cores escolhidas pelo usuario
+formColorMain.addEventListener('input', updateBackgroundColor)
+formColorSecond.addEventListener('input', updateBackgroundColor)
