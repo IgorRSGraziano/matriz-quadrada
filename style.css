@@ -1,3 +1,24 @@
+body {
+    margin: auto;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
+}
+
+
 .hide {
     display: none;
+}
+
+.matrix-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.matrix-table tr td{
+    border: solid 1px black;
+    font-size: 2rem;
+    padding: 10px;
+
 }
