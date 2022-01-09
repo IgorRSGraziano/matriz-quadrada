@@ -87,6 +87,11 @@ formCheckbox.addEventListener('click', (e) => {
     const checkBox = e.target
     document.querySelector(".form-color-selector").classList.toggle('hide')
     addTagDiagonalsMatrix(matrixTable)
+
+    //Limpa o estilo dinámico aplicado inline pela função "updateBackgroundColor"
+    document.querySelectorAll('.matrix-table tr td').forEach(el => {
+        el.style.backgroundColor = 'initial'
+    })
 })
 
 
